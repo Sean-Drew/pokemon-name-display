@@ -51,8 +51,8 @@ function App() {
     <React.Fragment>
     <PokemonList pokemon={pokemon} />
     <Pagination
-      goToNextPage={goToNextPage}
-      goToPrevPage={goToPrevPage}
+      goToNextPage={nextPageUrl ? goToNextPage : null}
+      goToPrevPage={prevPageUrl ? goToPrevPage : null}
     />
     </React.Fragment>
   )
